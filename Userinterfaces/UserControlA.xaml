@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="car_app.Userinterfaces.UserControlA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:car_app.Userinterfaces"
+             mc:Ignorable="d" 
+             Height="auto" Width="auto">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TransitionigContentSlide"  OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Cab" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <StackPanel>
+                        <TextBlock  Text="R$ 12" FontFamily="Cooper Black" FontSize="50" Foreground="#FFC00000"/>
+                        <TextBlock Text="SUV Toyota 2019" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"/>
+                        <TextBlock Text="Wedding/Trip" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
+                        <TextBlock  FontSize="15" Width="250" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap">
+                            Hit the Streets with Hot Looks
+                            
+                            Toyota Wigo’s zippy-looking front face has an expression that tells you it’s ready to go. Its rear end reveals a beautifully wide stance, emphasizing a low center-of-gravity. New Wigo hits the streets with stunningly good looks. It’s the word around town-the hot focus of attention.
+                            
+                        </TextBlock>
+                    </StackPanel>
+                    <Button FontFamily="Champagne &amp; Limousines" Content="Hire Now!" FontSize="18" Margin="25" Click="Button_Click"/>
+                </StackPanel>
+                <Image Margin="10"  Width="333" Height="214" Source="images/cars1.jpg" Stretch="UniformToFill"/>
+            </StackPanel>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>
